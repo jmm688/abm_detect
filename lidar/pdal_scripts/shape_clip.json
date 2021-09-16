@@ -1,0 +1,17 @@
+[
+    
+    "/home/jose/Documents/LiDAR/TM/input_LAS/points.laz",
+
+    {
+      "type":"filters.overlay",
+      "dimension":"Classification",
+      "datasource":"/home/jose/Documents/LiDAR/TM/GIS_data/Geopackages/geojson_testpdal.geojson"
+     
+    },
+    {
+      "type":"filters.range",
+      "limits":"Classification![2:2]"
+    },
+    "/home/jose/Documents/LiDAR/TM/output_LAS/TM_clipped.las"
+
+  ]
