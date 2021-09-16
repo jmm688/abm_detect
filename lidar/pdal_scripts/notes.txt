@@ -1,0 +1,62 @@
+#######################################
+#    NOTES ON HOW SCRIPTS WORK
+#######################################
+
+
+First.... To run any script....
+# 1) conda activate pdal
+or any other name for pdal enviroment in conda.
+
+# 2) pdal pipeline <name_of_script.json>
+
+# 3) get some coffee ..... could take a hot minute :)
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CLIPPING  
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[
+    # this here is the location of the input las file
+    "/home/jose/Documents/LiDAR/TM/input_LAS/points.laz",
+
+    {
+      # This filter will allow you to select poits given a specific condition defined by the "dimension"
+      "type":"filters.overlay",
+     
+      # This is the condition that will be selected in the .las file "Red" "Blue", "Intensity", "scan angle", etc. are also options... use comand pdal info <name_of_file.las> to find all otions
+      "dimension":"Classification",
+
+      # MUST BE A GEOJSON !!!! well that is the most simplest way to do this ... :(
+      # This is where conditions that fall inside a geometry are selected part
+     "datasource":"/home/jose/Documents/LiDAR/TM/GIS_data/Geopackages/geojson_testpdal.geojson"
+     
+    },
+    {
+      # Once selected above this filter will then decide to include or throw out in the final product
+      "type":"filters.range",
+
+      # think of this as if... then.... in this case ![2:2] means all classification 2 points not outdside .geojson  ... weird I KNOW!! 
+      "limits":"Classification![2:2]"
+    },
+      # name and directory of final product :) 
+    "/home/jose/Documents/LiDAR/TM/output_LAS/TM_clipped.las"
+
+  ]
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TRANSLATING
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+g
