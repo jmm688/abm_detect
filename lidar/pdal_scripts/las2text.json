@@ -1,0 +1,13 @@
+[
+    {
+        "type":"readers.las",
+        "filename":"/home/jose/Documents/LiDAR/TM/output_LAS/TM_clipped.las"
+    },
+    {
+        "type":"writers.text",
+        "format":"csv",
+        "order":"X,Y,Z",
+        "keep_unspecified":"false",
+        "filename":"/home/jose/Documents/LiDAR/TM/output_LAS/TM_clipped.csv"
+    }
+]
