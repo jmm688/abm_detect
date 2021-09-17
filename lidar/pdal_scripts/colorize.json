@@ -1,0 +1,27 @@
+{
+
+    "pipeline": [
+
+        "/home/jose/Documents/LiDAR/TM/GIS_data/mine_locations/mine_loc_0/mine0_clipped.las",
+
+        {
+            "type": "filters.colorization",
+            "raster": "mine_extent_0.tif"
+        },
+
+        {
+            "type": "filters.range",
+            "limits": "Red[1:]"
+        },
+
+        {
+            "type": "writers.las",
+            "compression": "true",
+            "minor_version": "2",
+            "dataformat_id": "3",
+            "filename":"/home/jose/Documents/LiDAR/TM/GIS_data/mine_locations/mine_loc_0/mine0_color.las"
+        }
+
+    ]
+
+}
