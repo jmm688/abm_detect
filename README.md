@@ -1,6 +1,6 @@
 # abm_detect
 A repository containing code for researching and automating the detection of abandoned mines in southern New Mexico.
-Currently contains python code for automating preprocessing steps for inbalanced classes for Machine Learning (ML).
+Currently, repo contains python code for automating preprocessing steps for inbalanced classes for Machine Learning (ML).
 In addition the Thesis.software.py supports various ML methods such as Support vector machines, PCR, PLSR, Logistic regression, etc.
 This repository also contains many plotting helper functions to easily map out pixels to corresponding geographic locations and will export various Gtiffs.
 
