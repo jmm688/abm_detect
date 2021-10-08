@@ -6,4 +6,4 @@ This repository also contains many plotting helper functions to easily map out p
 
 UPDATE!!! abm_detect now supports various Tensorflow CNN models, including code for preprocessing images! woohoo! image classification is super rad!
 
-UPDATE!!! repository now contains various json scripts for processing LiDAR point cloud.laz files using PDAL! ( including colorizing .las files :)
+UPDATE!!! repository now contains various json scripts for processing LiDAR point cloud.laz files using PDAL! ( including colorizing .las files :) )
