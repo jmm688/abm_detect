@@ -1,0 +1,15 @@
+[
+    "/home/jose/Github/my_projs/abm_detect/Figures/python_export/TM_lidar/geometry.bpf",
+
+    {
+            "resolution": 1,
+            "radius": 1.41,
+            "dimension": "Curvature",
+            "gdaldriver": "Gtiff",
+            "filename":"./curve_16_rast.tif"
+    
+    }
+    
+    
+]
+
