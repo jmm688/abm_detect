@@ -1,0 +1,15 @@
+[
+    "/home/jose/Documents/LiDAR/TM/GIS_data/mine_locations/alot_mines_colored.las",
+    {
+       "type":"filters.eigenvalues",
+        "knn":16},
+
+    {  "type":"filters.normal",
+        "knn":16},
+        
+    {
+        "type":"writers.bpf",
+        "filename":"geometry.bpf"
+    }
+]
+
