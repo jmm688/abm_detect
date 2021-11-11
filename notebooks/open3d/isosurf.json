@@ -1,0 +1,11 @@
+[
+    "/home/jose/Github/my_projs/abm_detect/notebooks/for_open3d.las",
+        {
+            "type":"filters.delaunay"
+        },
+        {
+            "type":"writers.ply",
+            "filename":"./isosurface_tri.ply",
+            "faces": true
+        }
+]
